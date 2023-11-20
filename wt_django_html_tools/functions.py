@@ -98,3 +98,5 @@ def set_html_attribute_defaults(html, tags=None, bleach_all=False, include_defau
             else:
                 if attr_value:
                     html = _add_attr(html, tgt_tag, attr_key, attr_value)
+
+    return html
