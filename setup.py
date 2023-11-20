@@ -8,7 +8,7 @@ setup(
     install_requires=[
         'django>=4.0',
         'bleach>=6.0',
-        'bs4>=4.12'
+        'bs4'
     ],
     python_requires=">=3.8"
 )
