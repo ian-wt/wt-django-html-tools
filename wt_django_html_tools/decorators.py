@@ -52,7 +52,7 @@ def sanitize_and_set_attribute_defaults(bleach_all=False, strip=True, include_de
                 **k
             )
             # now set defaults
-            value = set_attribute_defaults(
+            value = set_html_attribute_defaults(
                 value,
                 tags=tags,
                 bleach_all=bleach_all,
