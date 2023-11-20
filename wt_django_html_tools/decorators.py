@@ -2,6 +2,7 @@ import functools
 
 from .functions import get_tags, sanitize_html, set_html_attribute_defaults
 
+
 def sanitize(bleach_all=False, strip=True, include_defaults=False, **k):
     def decorator(func):
         @functools.wraps(func)
@@ -19,6 +20,7 @@ def sanitize(bleach_all=False, strip=True, include_defaults=False, **k):
         return wrapper
     return decorator
 
+
 def set_attribute_defaults(bleach_all=False, include_defaults=False, **k):
     def decorator(func):
         @functools.wraps(func)
@@ -34,6 +36,7 @@ def set_attribute_defaults(bleach_all=False, include_defaults=False, **k):
             return value
         return wrapper
     return decorator
+
 
 def sanitize_and_set_attribute_defaults(bleach_all=False, strip=True, include_defaults=False, **k):
     def decorator(func):
